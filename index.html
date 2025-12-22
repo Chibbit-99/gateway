@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My IP Address</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 2rem; }
+      .card { max-width: 720px; padding: 1.25rem 1.5rem; border: 1px solid rgba(127,127,127,.35); border-radius: 12px; }
+      code { font-size: 1.1rem; }
+      .muted { opacity: 0.75; }
+      button { padding: .6rem .9rem; border-radius: 10px; border: 1px solid rgba(127,127,127,.35); background: transparent; cursor: pointer; }
+      button:hover { background: rgba(127,127,127,.10); }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Your public IP address</h1>
+      <p>
+        <strong id="status" class="muted">Fetching…</strong>
+      </p>
+      <p>
+        IP: <code id="ip">—</code>
+      </p>
+
+      <button id="refresh" type="button">Refresh</button>
+
+      <p class="muted" style="margin-top: 1rem;">
+        Note: This shows your <em>public</em> IP as seen by the internet (not your local LAN IP).
+      </p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
