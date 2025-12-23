@@ -34,3 +34,11 @@ document.getElementById("refresh").addEventListener("click", fetchIP);
 
 // Fetch immediately on page load
 fetchIP();
+
+
+const params = new URLSearchParams(window.location.search);
+
+const id = params.get("id");
+const redirect = params.get("redirect");
+
+console.log(id, redirect);
