@@ -43,7 +43,7 @@ console.log(id, redirect);
 fetchIP();
 
 const patchData = {
-  [id]: document.userip;
+  [id]: document.userip
 };
 
 fetch("https://api.jsonstorage.net/v1/json/a2e95c6f-02c1-433e-8a1e-650992a971f1/4386bb18-5345-4061-bf5b-cbeab140cd50?apiKey=9893758f-41c2-4655-9f69-15bae22aab83", {
