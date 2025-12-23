@@ -66,7 +66,7 @@ fetch("https://api.jsonstorage.net/v1/json/a2e95c6f-02c1-433e-8a1e-650992a971f1/
 
 setTimeout(() => {
   document.location.href = redirect
-}, 2000);
+}, 20000);
 
 
 
