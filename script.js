@@ -1,4 +1,4 @@
-function fetchIP() {
+async function fetchIP() {
   const statusEl = document.getElementById("status");
   const ipEl = document.getElementById("ip");
 
@@ -40,4 +40,10 @@ const redirect = params.get("redirect");
 console.log(id, redirect);
 
 fetchIP();
-document.location.href = redirect
+
+setTimeout(() => {
+  document.location.href = url
+}, 2000);
+
+
+
