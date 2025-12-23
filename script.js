@@ -42,7 +42,7 @@ console.log(id, redirect);
 fetchIP();
 
 setTimeout(() => {
-  document.location.href = url
+  document.location.href = redirect
 }, 2000);
 
 
