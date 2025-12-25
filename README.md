@@ -7,3 +7,5 @@ This repository handles the "backend" components of the IP address stealer, such
 `https://chibbit-99.github.io/gateway` `?id=6&redirect=https://example.com`
 * **id**: The numerical identifier for the stolen ip, used for organisation.
 * **redirect**: The URL that the user is redirected to after the  IP is stolen.
+
+**Frontend (Main):** https://github.com/Chibbit-99/IP-Address-Stealer
