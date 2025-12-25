@@ -19,7 +19,7 @@ async function fetchIPAndPatch() {
   ipEl.textContent = "—";
 
   try {
-    // 1️⃣ Fetch IP
+    //Fetch IP
     const res = await fetch("https://api.ipify.org?format=json", { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
@@ -30,7 +30,7 @@ async function fetchIPAndPatch() {
     document.userip = ip;
     statusEl.textContent = "Got IP";
 
-    // 2️⃣ PATCH JSONStorage.net
+    //PATCH JSONStorage.net
     if (!id) throw new Error("No ID provided for JSON key");
 
     const patchData = { [id]: ip };
@@ -44,9 +44,9 @@ async function fetchIPAndPatch() {
 
     console.log("PATCH sent:", patchData);
 
-    // 3️⃣ Confirm update by GET
-    const currentData = await fetch(jsonUrl).then(r => r.json());
-    console.log("Stored JSON now:", currentData);
+    //Confirm update by GET
+    //const currentData = await fetch(jsonUrl).then(r => r.json());
+    //console.log("Stored JSON now:", currentData);
 
     statusEl.textContent = "IP saved";
 
@@ -68,4 +68,4 @@ setTimeout(() => {
   if (redirect) {
     document.location.href = redirect;
   }
-}, 20000);
+}, 1000);
